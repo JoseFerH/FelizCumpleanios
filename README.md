@@ -66,6 +66,41 @@ Es crucial que las imágenes respeten el siguiente formato de nombre: `[titulode
 - `amistad_4.jpg`
 - `amistad_5.jpg`
 
+## Personalización de Textos
+
+Para que la experiencia sea completamente tuya, puedes (y debes) personalizar los textos de la página. A continuación se detalla dónde encontrar y modificar cada texto:
+
+### 1. Pantalla de Bienvenida (Landing Page)
+Los textos principales de la pantalla inicial se encuentran en el archivo **`index.html`**:
+
+Abre `index.html` y busca estas líneas (aproximadamente en la línea 13):
+```html
+<div class="landing-content">
+    <h1>¡Feliz Cumpleaños!</h1> <!-- Título Principal -->
+    <p>Un viaje especial por tus recuerdos...</p> <!-- Subtítulo -->
+    <button id="start-btn" class="cta-button">Comenzar el Viaje</button> <!-- Texto del botón -->
+</div>
+```
+
+### 2. Títulos y Descripciones de las Paradas
+Los textos que aparecen en las fotos tipo "Polaroid" y dentro del modal al hacer clic, se encuentran en el archivo **`script.js`**.
+
+Abre `script.js` y busca el objeto `sectionsData` (en las primeras líneas). Verás algo como esto:
+
+```javascript
+const sectionsData = {
+    1: { title: "BRIELITA", images: [...], desc: "Momentos inolvidables de Brielita." },
+    2: { title: "FAMILIA", images: [...], desc: "La familia siempre unida en cada paso." },
+    // ...
+};
+```
+
+Para cada parada, puedes modificar:
+- **`title`**: El título corto que aparece debajo de la foto polaroid en el camino (Ej: "BRIELITA").
+- **`desc`**: El texto o mensaje largo que aparece dentro del modal cuando se abre la galería de fotos de esa sección (Ej: "Momentos inolvidables de Brielita...").
+
+*Nota: No modifiques la lista de `images` a menos que sepas lo que haces, ya que están configuradas para buscar los archivos con los nombres exactos descritos arriba.*
+
 ## Tecnologías Utilizadas
 - HTML5
 - CSS3 (Flexbox, Pseudo-elementos, Variables CSS, Mobile-First)
