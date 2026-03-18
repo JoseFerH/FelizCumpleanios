@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Pantalla 1: Bienvenida -->
+    <section id="landing" class="screen active">
+        <div class="landing-content">
+            <h1>¡Feliz Cumpleaños!</h1>
+            <p>Un viaje especial por tus recuerdos...</p>
+            <button id="start-btn" class="cta-button">Comenzar el Viaje</button>
+        </div>
+    </section>
+
+    <!-- Pantalla 2: El Camino -->
+    <section id="path-screen" class="screen hidden">
+        <div class="path-container" id="path-container">
+            <!-- Polaroids inyectados por JS -->
+        </div>
+    </section>
+
+    <!-- Sistema de Modal Dinámico -->
+    <div id="dynamic-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-images" class="modal-images-container">
+                <!-- Imágenes inyectadas por JS -->
+            </div>
+            <p id="modal-desc" class="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
