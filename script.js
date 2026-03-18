@@ -1,12 +1,12 @@
 // Data Handling
 const sectionsData = {
-    1: { title: "BRIELITA", images: ["brielita_1.jpg", "brielita_2.jpg", "brielita_3.jpg", "brielita_4.jpg", "brielita_5.jpg"], desc: "Momentos inolvidables de Brielita." },
-    2: { title: "FAMILIA", images: ["familia_1.jpg", "familia_2.jpg", "familia_3.jpg", "familia_4.jpg", "familia_5.jpg"], desc: "La familia siempre unida en cada paso." },
-    3: { title: "BRUNO", images: ["bruno_1.jpg", "bruno_2.jpg", "bruno_3.jpg", "bruno_4.jpg", "bruno_5.jpg"], desc: "Recuerdos divertidos y tiernos de Bruno." },
-    4: { title: "BOO", images: ["boo_1.jpg", "boo_2.jpg", "boo_3.jpg", "boo_4.jpg", "boo_5.jpg"], desc: "Las mejores aventuras de Boo." },
-    5: { title: "LEO", images: ["leo_1.jpg", "leo_2.jpg", "leo_3.jpg", "leo_4.jpg", "leo_5.jpg"], desc: "Una colección especial de momentos con Leo." },
-    6: { title: "ELA", images: ["ela_1.jpg", "ela_2.jpg", "ela_3.jpg", "ela_4.jpg", "ela_5.jpg"], desc: "Los recuerdos más dulces de Ela." },
-    7: { title: "AMISTAD", images: ["amistad_1.jpg", "amistad_2.jpg", "amistad_3.jpg", "amistad_4.jpg", "amistad_5.jpg"], desc: "Las amistades que nos acompañan siempre." }
+    1: { title: "BRIELITA", images: ["brielita_1.jpeg", "brielita_2.jpeg", "brielita_3.jpeg", "brielita_4.jpeg", "brielita_5.jpeg"], desc: "Momentos inolvidables de Brielita." },
+    2: { title: "FAMILIA", images: ["familia_1.jpeg", "familia_2.jpeg", "familia_3.jpeg", "familia_4.jpeg", "familia_5.jpeg"], desc: "La familia siempre unida en cada paso." },
+    3: { title: "BRUNO", images: ["bruno_1.jpeg", "bruno_2.jpeg", "bruno_3.jpeg", "bruno_4.jpeg", "bruno_5.jpeg"], desc: "Recuerdos divertidos y tiernos de Bruno." },
+    4: { title: "BOO", images: ["boo_1.jpeg", "boo_2.jpeg", "boo_3.jpeg", "boo_4.jpeg", "boo_5.jpeg"], desc: "Las mejores aventuras de Boo." },
+    5: { title: "LEO", images: ["leo_1.jpeg", "leo_2.jpeg", "leo_3.jpeg", "leo_4.jpeg", "leo_5.jpeg"], desc: "Una colección especial de momentos con Leo." },
+    6: { title: "ELA", images: ["ela_1.jpeg", "ela_2.jpeg", "ela_3.jpeg", "ela_4.jpeg", "ela_5.jpeg"], desc: "Los recuerdos más dulces de Ela." },
+    7: { title: "AMISTAD", images: ["amistad_1.jpeg", "amistad_2.jpeg", "amistad_3.jpeg", "amistad_4.jpeg", "amistad_5.jpeg"], desc: "Las amistades que nos acompañan siempre." }
 };
 
 // DOM Elements
