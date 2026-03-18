@@ -1,12 +1,12 @@
 // Data Handling
 const sectionsData = {
-    1: { title: "BRIELITA", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Momentos inolvidables de Brielita." },
-    2: { title: "FAMILIA", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "La familia siempre unida en cada paso." },
-    3: { title: "BRUNO", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Recuerdos divertidos y tiernos de Bruno." },
-    4: { title: "BOO", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Las mejores aventuras de Boo." },
-    5: { title: "LEO", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Una colección especial de momentos con Leo." },
-    6: { title: "ELA", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Los recuerdos más dulces de Ela." },
-    7: { title: "AMISTAD", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Las amistades que nos acompañan siempre." }
+    1: { title: "BRIELITA", images: ["brielita_1.jpg", "brielita_2.jpg", "brielita_3.jpg", "brielita_4.jpg", "brielita_5.jpg"], desc: "Momentos inolvidables de Brielita." },
+    2: { title: "FAMILIA", images: ["familia_1.jpg", "familia_2.jpg", "familia_3.jpg", "familia_4.jpg", "familia_5.jpg"], desc: "La familia siempre unida en cada paso." },
+    3: { title: "BRUNO", images: ["bruno_1.jpg", "bruno_2.jpg", "bruno_3.jpg", "bruno_4.jpg", "bruno_5.jpg"], desc: "Recuerdos divertidos y tiernos de Bruno." },
+    4: { title: "BOO", images: ["boo_1.jpg", "boo_2.jpg", "boo_3.jpg", "boo_4.jpg", "boo_5.jpg"], desc: "Las mejores aventuras de Boo." },
+    5: { title: "LEO", images: ["leo_1.jpg", "leo_2.jpg", "leo_3.jpg", "leo_4.jpg", "leo_5.jpg"], desc: "Una colección especial de momentos con Leo." },
+    6: { title: "ELA", images: ["ela_1.jpg", "ela_2.jpg", "ela_3.jpg", "ela_4.jpg", "ela_5.jpg"], desc: "Los recuerdos más dulces de Ela." },
+    7: { title: "AMISTAD", images: ["amistad_1.jpg", "amistad_2.jpg", "amistad_3.jpg", "amistad_4.jpg", "amistad_5.jpg"], desc: "Las amistades que nos acompañan siempre." }
 };
 
 // DOM Elements

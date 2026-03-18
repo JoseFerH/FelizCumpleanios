@@ -87,35 +87,69 @@ body {
     padding: 20px 0;
 }
 
-/* El Camino (Dashed Line) */
-.path-container::before {
+/* Elementos del camino (Serpentine path) */
+.path-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.path-item {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+    padding: 30px 0;
+}
+
+/* Curved lines connecting items */
+.path-item::before {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 2px dashed var(--path-color);
+    top: -30px;
+    bottom: -30px;
+    width: 50%;
+    border: 3px dashed var(--path-color);
     z-index: 1;
 }
 
-/* Elementos del camino */
-.path-item {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 2;
-    padding-right: 20px;
+/* Odd items (Left to Right curve) */
+.path-item:nth-child(odd) {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+.path-item:nth-child(odd)::before {
+    left: 50%;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
 }
 
+/* Even items (Right to Left curve) */
 .path-item:nth-child(even) {
-    align-self: flex-end;
-    justify-content: flex-start;
-    margin-left: 50%;
-    padding-right: 0;
-    padding-left: 20px;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.path-item:nth-child(even)::before {
+    right: 50%;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+}
+
+/* Fix first and last items borders to not overflow unnecessarily */
+.path-item:first-child::before {
+    top: 50%;
+    border-top: none;
+}
+.path-item:last-child::before {
+    bottom: 50%;
+    border-bottom: none;
+}
+
+/* Ensure polaroids are above the path line */
+.polaroid {
+    position: relative;
+    z-index: 3;
 }
 
 /* Polaroid Effect */
