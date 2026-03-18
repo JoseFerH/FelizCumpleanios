@@ -1,9 +1,12 @@
 // Data Handling
 const sectionsData = {
-    1: { title: "El inicio", images: ["img1.jpg", "img2.jpg"], desc: "Donde todo empezó..." },
-    2: { title: "Las aventuras", images: ["img1.jpg", "img2.jpg"], desc: "Viajando y explorando el mundo juntos." },
-    3: { title: "Los momentos", images: ["img1.jpg", "img2.jpg"], desc: "Risas, llantos y todo lo demás." },
-    4: { title: "El futuro", images: ["img1.jpg", "img2.jpg"], desc: "Lo mejor está por venir." }
+    1: { title: "BRIELITA", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Momentos inolvidables de Brielita." },
+    2: { title: "FAMILIA", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "La familia siempre unida en cada paso." },
+    3: { title: "BRUNO", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Recuerdos divertidos y tiernos de Bruno." },
+    4: { title: "BOO", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Las mejores aventuras de Boo." },
+    5: { title: "LEO", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Una colección especial de momentos con Leo." },
+    6: { title: "ELA", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Los recuerdos más dulces de Ela." },
+    7: { title: "AMISTAD", images: ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"], desc: "Las amistades que nos acompañan siempre." }
 };
 
 // DOM Elements
