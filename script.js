@@ -20,7 +20,7 @@ const modalDesc = document.getElementById('modal-desc');
 const closeBtn = document.querySelector('.close-btn');
 
 // Audio Management
-const audio = new Audio('assets/music/bg-music.mp3');
+const audio = new Audio('assets/music/Luis Fonsi - Girasoles (Letra).mp3');
 audio.loop = true;
 
 // Event Listeners
