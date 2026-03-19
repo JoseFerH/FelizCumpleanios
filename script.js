@@ -1,12 +1,12 @@
 // Data Handling
 const sectionsData = {
-    1: { title: "BRIELITA", images: ["brielita_1.jpeg", "brielita_2.jpeg", "brielita_3.jpeg", "brielita_4.jpeg", "brielita_5.jpeg"], desc: "Momentos inolvidables de Brielita." },
-    2: { title: "FAMILIA", images: ["familia_1.jpeg", "familia_2.jpeg", "familia_3.jpeg", "familia_4.jpeg", "familia_5.jpeg"], desc: "La familia siempre unida en cada paso." },
-    3: { title: "BRUNO", images: ["bruno_1.jpeg", "bruno_2.jpeg", "bruno_3.jpeg", "bruno_4.jpeg", "bruno_5.jpeg"], desc: "Recuerdos divertidos y tiernos de Bruno." },
-    4: { title: "BOO", images: ["boo_1.jpeg", "boo_2.jpeg", "boo_3.jpeg", "boo_4.jpeg", "boo_5.jpeg"], desc: "Las mejores aventuras de Boo." },
-    5: { title: "LEO", images: ["leo_1.jpeg", "leo_2.jpeg", "leo_3.jpeg", "leo_4.jpeg", "leo_5.jpeg"], desc: "Una colección especial de momentos con Leo." },
-    6: { title: "ELA", images: ["ela_1.jpeg", "ela_2.jpeg", "ela_3.jpeg", "ela_4.jpeg", "ela_5.jpeg"], desc: "Los recuerdos más dulces de Ela." },
-    7: { title: "AMISTAD", images: ["amistad_1.jpeg", "amistad_2.jpeg", "amistad_3.jpeg", "amistad_4.jpeg", "amistad_5.jpeg"], desc: "Las amistades que nos acompañan siempre." }
+    1: { title: "BRIELITA", images: ["brielita_1.jpeg", "brielita_2.jpeg", "brielita_3.jpeg", "brielita_4.jpeg", "brielita_5.jpeg"], desc: "ERES EL CENTRO DE ESTO, DE TUS AMIGOS, DE TU FAMILIA, DE TODO LO QUE TE RODEA, QUIERETE COMO TODOS TE QUEREMOS" },
+    2: { title: "FAMILIA", images: ["familia_1.jpeg", "familia_2.jpeg", "familia_3.jpeg", "familia_4.jpeg", "familia_5.jpeg"], desc: "TODA TU FAMILIA TE ACOMPAÑARÁ SIEMPRE, LA QUE TIENES AQUÍ Y LA QUE TE CUIDA DESDE EL CIELO, TODOS TE AMAN MUCHO" },
+    3: { title: "BRUNO", images: ["bruno_1.jpeg", "bruno_2.jpeg", "bruno_3.jpeg", "bruno_4.jpeg", "bruno_5.jpeg"], desc: "NO TENGO TANTAS FOTOS DE BRUNO, PERO LAS QUE TENGO SON ESPECIALES, Y SON HACEN VER LO IMPORTANTE QUE ES PARA TÍ" },
+    4: { title: "BOO", images: ["boo_1.jpeg", "boo_2.jpeg", "boo_3.jpeg", "boo_4.jpeg", "boo_5.jpeg"], desc: "EL PRINCIPE, EL REY, BOO LA ESTRELLA EN TU VIDA. HACE NO MUCHO QUE SE FUE, PERO AQUÍ SIGUE EN CADA RECUERDO QUE TIENES" },
+    5: { title: "LEO", images: ["leo_1.jpeg", "leo_2.jpeg", "leo_3.jpeg", "leo_4.jpeg", "leo_5.jpeg"], desc: "LEITO ES ESPECIAL, DIFERENTE A BOO, PERO IGUAL DE IMPORTANTE PARA TI Y AMOROSO, DESDE TAN PEQUEÑO Y JUGUETON HASTA HOY IGUAL DE JUGUETON, MENOS PEQUEÑO JAJA" },
+    6: { title: "ELA", images: ["ela_1.jpeg", "ela_2.jpeg", "ela_3.jpeg", "ela_4.jpeg", "ela_5.jpeg"], desc: "ELA APENAS TIENE TIEMPO CONTIGO, PERO HASTA POSA PARA CUALQUIER FOTO. A PESAR DE SER RACISTA ME QUIERE A MI TAMBIEN JAJA POR ESO LA AMO" },
+    7: { title: "AMISTAD", images: ["amistad_1.jpeg", "amistad_2.jpeg", "amistad_3.jpeg", "amistad_4.jpeg", "amistad_5.jpeg"], desc: "Y PUES NUESTRA AMISTAD SIGNIFICA MUCHO PARA MI, NAH, SIGNIFICA TODO PARA MI. DE LAS MILES DE FOTOS QUE TENEMOS JUNTOS, ELEGÍ ESTÁS QUE TIENEN SU PROPOA HISTORIA" }
 };
 
 // DOM Elements
