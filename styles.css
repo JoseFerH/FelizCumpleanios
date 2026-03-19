@@ -1,9 +1,22 @@
 /* Variables y Resets */
 :root {
-    --primary-color: #ff6f61;
-    --bg-color: #fce4ec;
-    --text-color: #333;
-    --path-color: #888;
+    /* Identidad (Brand) */
+    --primary-color: #51a2ff;
+    --primary-dark: #0066d6;
+    --primary-light: #e6f2ff;
+
+    /* Superficie (Backgrounds) */
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --border-color: #e2e8f0;
+
+    /* Tipografía (Textos) */
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-on-primary: #ffffff;
+
+    /* Retrocompatibilidad / Antiguas Variables */
+    --path-color: var(--border-color);
 }
 
 * {
@@ -14,8 +27,8 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
     overflow-x: hidden;
 }
 
@@ -61,12 +74,16 @@ body {
     padding: 15px 30px;
     font-size: 1.2rem;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-on-primary);
     border: none;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-dark);
 }
 
 .cta-button:active {
@@ -154,7 +171,7 @@ body {
 
 /* Polaroid Effect */
 .polaroid {
-    background: #fff;
+    background: var(--bg-surface);
     padding: 10px 10px 30px 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transform: rotate(calc(var(--rotation, 0) * 1deg)); /* Rotación dinámica */
@@ -178,7 +195,7 @@ body {
     text-align: center;
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
     font-weight: bold;
 }
 
@@ -198,7 +215,7 @@ body {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: var(--bg-surface);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -216,7 +233,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .modal-images-container img {
@@ -228,7 +245,7 @@ body {
 
 .modal-description {
     font-size: 1.1rem;
-    color: #444;
+    color: var(--text-secondary);
     margin-bottom: 15px;
     margin-top: 15px;
 }
