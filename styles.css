@@ -1,9 +1,22 @@
 /* Variables y Resets */
 :root {
-    --primary-color: #ff6f61;
-    --bg-color: #fce4ec;
-    --text-color: #333;
-    --path-color: #888;
+    /* Identidad (Brand) */
+    --primary-color: #51a2ff;
+    --primary-dark: #0066d6;
+    --primary-light: #e6f2ff;
+
+    /* Superficie (Backgrounds) */
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --border-color: #e2e8f0;
+
+    /* Tipografía (Textos) */
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-on-primary: #ffffff;
+
+    /* Retrocompatibilidad / Antiguas Variables */
+    --path-color: var(--border-color);
 }
 
 * {
@@ -14,8 +27,8 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
     overflow-x: hidden;
 }
 
@@ -61,12 +74,16 @@ body {
     padding: 15px 30px;
     font-size: 1.2rem;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-on-primary);
     border: none;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-dark);
 }
 
 .cta-button:active {
@@ -77,7 +94,7 @@ body {
 /* Pantalla 2: El Camino */
 #path-screen {
     display: block;
-    padding: 50px 20px;
+    padding: 50px 10px;
 }
 
 .path-container {
@@ -85,87 +102,59 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px 0;
-}
-
-/* Elementos del camino (Serpentine path) */
-.path-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden; /* Evitar scroll horizontal extra en móvil */
 }
 
-.path-item {
-    display: flex;
-    width: 100%;
-    max-width: 400px;
-    position: relative;
-    z-index: 2;
-    padding: 30px 0;
-}
-
-/* Curved lines connecting items */
-.path-item::before {
+/* Línea central del camino */
+.path-container::before {
     content: '';
     position: absolute;
-    top: -30px;
-    bottom: -30px;
-    width: 50%;
-    border: 3px dashed var(--path-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 2px dashed var(--path-color);
     z-index: 1;
 }
 
-/* Odd items (Left to Right curve) */
-.path-item:nth-child(odd) {
-    justify-content: flex-start;
-    padding-left: 20px;
-}
-.path-item:nth-child(odd)::before {
-    left: 50%;
-    border-left: none;
-    border-radius: 0 50px 50px 0;
-}
-
-/* Even items (Right to Left curve) */
-.path-item:nth-child(even) {
-    justify-content: flex-end;
-    padding-right: 20px;
-}
-.path-item:nth-child(even)::before {
-    right: 50%;
-    border-right: none;
-    border-radius: 50px 0 0 50px;
-}
-
-/* Fix first and last items borders to not overflow unnecessarily */
-.path-item:first-child::before {
-    top: 50%;
-    border-top: none;
-}
-.path-item:last-child::before {
-    bottom: 50%;
-    border-bottom: none;
-}
-
-/* Ensure polaroids are above the path line */
-.polaroid {
+/* Elementos del camino */
+.path-item {
+    display: flex;
+    width: 100%;
     position: relative;
-    z-index: 3;
+    z-index: 2;
+    padding: 40px 0;
+    justify-content: center;
+}
+
+/* Alternar izquierda / derecha para que queden sobre la línea central */
+.path-item:nth-child(odd) {
+    padding-right: 15%;
+}
+.path-item:nth-child(even) {
+    padding-left: 15%;
 }
 
 /* Polaroid Effect */
 .polaroid {
-    background: #fff;
+    position: relative;
+    z-index: 3;
+    background: var(--bg-surface);
     padding: 10px 10px 30px 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transform: rotate(calc(var(--rotation, 0) * 1deg)); /* Rotación dinámica */
     cursor: pointer;
     transition: transform 0.2s;
-    width: 150px;
+    width: 160px; /* Tamaño móvil-first */
 }
 
+/* Hover state */
 .polaroid:hover {
     transform: scale(1.05) rotate(calc(var(--rotation, 0) * 1deg));
-    z-index: 3;
+    z-index: 4;
 }
 
 .polaroid img {
@@ -178,7 +167,7 @@ body {
     text-align: center;
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
     font-weight: bold;
 }
 
@@ -198,7 +187,7 @@ body {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: var(--bg-surface);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -216,7 +205,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .modal-images-container img {
@@ -228,7 +217,28 @@ body {
 
 .modal-description {
     font-size: 1.1rem;
-    color: #444;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.scroll-arrow {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
 }
 
 /* Media Queries (Desktop >= 768px) */
